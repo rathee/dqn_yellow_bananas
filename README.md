@@ -32,11 +32,30 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file.
+3. Install the dependencies by running
+```
+sh install.sh
+'''
 
 ### Instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+Run learn.py file to train the agent using:
+```
+python learn.py
+```
+
+### Implementation details
+1. We are using DQN for the Reinforcement Learning task
+2. Idea being used is from the paper "Human-level control through deep reinforcement
+learning" (https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+3. We are using Replay buffer to train the network
+4. We also tried prioritized experience replay code(https://github.com/rlcode/per.git) but did not get the expected result.
+Also tried using heap for prioritized memory.
+
+###Output:
+1. Agent took around 560 episodes to reach an average reward of 13 over 100 episodes.
+2. Model is saved in the checkpoint.pth file.
 
 ### (Optional) Challenge: Learning from Pixels
 
