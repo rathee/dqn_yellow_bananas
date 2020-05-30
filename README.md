@@ -57,6 +57,11 @@ Also tried using heap for prioritized memory.
 1. Agent took around 560 episodes to reach an average reward of 13 over 100 episodes.
 2. Model is saved in the checkpoint.pth file.
 
+
+### Ideas for future work:
+1. Need to look at why prioritized experience replay is not work.
+2. Work on double DQN and Dueling DQN.
+
 ### (Optional) Challenge: Learning from Pixels
 
 After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place!  In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction.  A more challenging task would be to learn directly from pixels!
