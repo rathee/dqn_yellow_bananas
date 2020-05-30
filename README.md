@@ -36,7 +36,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 3. Install the dependencies by running
 ```
 sh install.sh
-'''
+```
 
 ### Instructions
 
