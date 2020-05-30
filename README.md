@@ -53,7 +53,7 @@ learning" (https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 4. We also tried prioritized experience replay code(https://github.com/rlcode/per.git) but did not get the expected result.
 Also tried using heap for prioritized memory.
 
-###Output:
+### Output:
 1. Agent took around 560 episodes to reach an average reward of 13 over 100 episodes.
 2. Model is saved in the checkpoint.pth file.
 
